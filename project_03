@@ -1,0 +1,16 @@
+import random as r
+list1=["Samsung","Apple","Tesla","Google","Facebook","Tata"]
+
+g=r.choice(list1)
+
+print(len(g))
+u= input("Enter Your Company Name ::: ")
+
+for i in list1:
+    if u==g:
+        print("You're right ")
+        break
+    else:
+        print("You're Wrong")
+        print("Guess Again !!!")
+        u= input("Enter Your Company Name ::: ")
